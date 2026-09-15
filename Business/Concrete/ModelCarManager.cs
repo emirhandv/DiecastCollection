@@ -34,7 +34,7 @@ namespace Business.Concrete
                 throw new Exception("Model color cannot be null.");
             }
 
-
+            Console.WriteLine("Başarıyla Eklenmiştir.");
             _modelCarDal.Add(modelCar);
         }
 
@@ -46,6 +46,7 @@ namespace Business.Concrete
                 throw new Exception("Stoğu bulunan bir aracı silemezsiniz. Lütfen önce stoğu sıfırlayın.");
             }
 
+            Console.WriteLine("Başarıyla Silinmiştir.");
             // Kuraldan başarıyla geçerse veri tabanından (DataAccess) sil
             _modelCarDal.Delete(modelCar);
         }
@@ -87,6 +88,8 @@ namespace Business.Concrete
             {
                 throw new Exception("Stock cannot be negative.");
             }
+
+            Console.WriteLine("Başarıyla güncellenmiştir.");
 
             _modelCarDal.Update(modelCar);
         }

@@ -52,6 +52,10 @@ namespace DataAccsess.Concrete
             carToUpdate .ModelName = car.ModelName;
             carToUpdate.ModelColor = car.ModelColor;
             carToUpdate.BrandId = car.BrandId;
+            carToUpdate.Price = car.Price;
+            carToUpdate.Stock = car.Stock;
+            carToUpdate.ModelId = car.ModelId;
+            
         }
     }
 }
